@@ -18,8 +18,24 @@ dependencies = [
 ]
 
 [[package]]
+name = "memchr"
+version = "2.7.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "523dc4f511e55ab87b694dc30d0f820d60906ef06413f93d4d7a1385599cc149"
+
+[[package]]
+name = "omnom"
+version = "3.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "66562a92c66d5937e9d549597c2d3cafe3d2367dd08dc257da730587c2cfc218"
+dependencies = [
+ "memchr",
+]
+
+[[package]]
 name = "rust_iterator"
 version = "0.1.0"
 dependencies = [
  "itertools",
+ "omnom",
 ]
